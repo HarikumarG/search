@@ -1,0 +1,11 @@
+//Set JAVA_HOME
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+
+//Compile .java file which will generate .h file
+javac -h . FolderSearch.java
+
+//Compile .cpp file which will generate .so file (linux) or .dll file (windows)
+g++ -fPIC -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/linux" -shared -o libhello.so FolderSearch.cpp
+
+//Run .class file in java
+java -Djava.library.path=. FolderSearch
