@@ -1,6 +1,7 @@
 ## Search
 
 This repo consist of two separate functionalities based on JNI (Java Native Interface)
+
 This is the miniature core concept of https://github.com/HarikumarG/Searching-Backend
 
 ## Steps to RUN
